@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>M YASMIN- Portfolio</title>
+  <style>
+    body{
+      font-family: Arial,  sans-serif;
+      margin: 3px;
+      padding: 3px;
+      background-color:rgb(189, 50, 50);
+    }
+
+    header{
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+      position: relative;
+    }
+
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .profile_picture{
+      width: 0px;
+      height: 0px;
+      border-radius: 75%;
+      object-fit: cover;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+     }
+
+     nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0px;
+
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .section-content {
+      background-color: #fff;
+      padding: 2rem;
+      margin: 1rem;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .download-button{
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .download-button:hover{
+      background-color: blue;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #333;
+      color: #fff;
+    }
+
+    ul {
+      list-style-type: lower-alpha;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <div class="header-content">
+        <img src="C:\Users\user\Downloads\pro.jpg"alt="Your Profile Picture"class="profile-picture">
+        <h1>YASMIN M</h1>
+      </div>  
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Resume">Resume</a></li>
+      </ul>
+    </nav>
+    <section id="About">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>Hello Everyone! this is YASMIN M I am a student of Bsc computer science<br>I have Completed My Higher Education in Government Higher Secondary School<br>I always Helping by others<br>Trust worthy person<br>I love nature<br>My Hobbies is Reading good life quotes and listening good songs<br>My Long Time Goal get a highest position in best company<br>My Short Time Goal is build more skill in my department</p>
+    </div>
+  </section>
+  <section id="Education">
+    <div class="section-content">
+      <h2>Education</h2>
+      <p>I am doing Bsc computer science in Annai Hajira Women's College.</p>
+    </div>
+</section>
+<section id="Skills">
+<div class="section-content">
+  <h2>Skills</h2>
+  <ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>Python</li>
+    <li>Machine Learning</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java Script</li>
+  </ul>
+</div>
+</section>
+<section id="Resume">
+  <center>
+    <div class="section-content">
+      <h2>Resume</h2>
+      <a href="C:\Users\user\Downloads\IMG_20231024_211941.jpg"class="download-button">Download Resume</a>
+    </div>
+  </center>
+</section>
+<footer>
+ <center> <p>&copy; 2023 YASMIN M</p></center>
+</footer>
+<script>
+  document.querySelectorAll('a[href^="#"]').foreach(anchor=>{
+    anchor.addEventListener('click',function(e){
+      e.preventDefault();
+
+
+      const targetId=this.getAttribute('href').substring(1);
+      const targetElement=document.getElementById(targetId);
+
+
+if(targetElement){
+  window.scrollTo({
+    top:targetElement.offsetTop,
+    behaviour:'smooth'
+  });
+}      
+    });  
+
+  });
+</script>
+</body>
+</html>
